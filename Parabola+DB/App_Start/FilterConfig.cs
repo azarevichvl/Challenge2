@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Parabola_DB
+namespace ParabolaDB
 {
     public class FilterConfig
     {

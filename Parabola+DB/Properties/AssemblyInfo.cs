@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется следующим образом
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных с этой сборкой.
-[assembly: AssemblyTitle("Parabola_DB")]
+[assembly: AssemblyTitle("ParabolaDB")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Parabola_DB")]
+[assembly: AssemblyProduct("ParabolaDB")]
 [assembly: AssemblyCopyright("© , 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

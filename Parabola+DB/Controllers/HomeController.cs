@@ -3,28 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ParabolaDB.Models;
+using ParabolaDB.Services;
+using ParabolaDB.Attributes;
 
-namespace Parabola_DB.Controllers
+namespace ParabolaDB.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        ParabolaContext db = new ParabolaContext();
+
+        public ActionResult Index(Param par)
         {
-            return View();
+            FunctCalc.GeneratePoints(par, db);
+            return View(par);
         }
 
-        public ActionResult About()
+        public JsonResult GetPointsJson()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            return Json(FunctCalc.getPoints(), JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
